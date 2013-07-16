@@ -1,0 +1,54 @@
+<!-- BEGIN: main -->
+
+	 <link href="http://testing.ocesa.com.mx/trident/styles/login.css" rel="stylesheet" type="text/css" media="screen">
+
+	<!-- BEGIN: message -->
+        <div id="message" class="message {__MESSAGE_TYPE__}"><p>{__MESSAGE_TEXT__}</p></div>
+    <!-- END: message -->
+
+
+	<form id="form-login" method="get" name="frmLogin" action="{__SITE_URL__}index.php?action=loginTriden&option={__OPTIO__}" >
+
+		<!-- BEGIN: user -->
+		<div class="required">
+			<label>Usuario: </label> 
+			<input type="text" name="user" id="user"> 
+		</div>
+
+		<div class="required">
+			<label>Contraseña: </label> 
+			<input type="password" name="password" id="password"> 
+		</div>
+		<div class="required">
+			<input type="hidden" value="login" id="option">
+			<!-- <p class="label-join"><a href="javascript: void(0);" onclick="document.frmLogin.submit();">Ir</a></p>-->
+			<p class="label-join"> <a href="#" id="session">Ir</a></p>
+		</div>
+		<!-- END: user -->
+
+		<!-- BEGIN: edit-->	
+			<div class="required">
+				<label>Contraseña actual: </label> 
+				<input type="password" name="password"> 
+			</div>
+
+			<div class="required new_password">
+				<label>Nueva contraseña: </label> 
+				<input type="password" name="new_password"> 
+			</div>
+
+			<div class="required new_password"> 
+				<label>Verificar contraseña: </label> 
+				<input type="password" name="verify_password"> 
+			</div>
+
+			<div>
+				<p class="label-join"><a href="javascript: void(0);" onclick="document.frmLogin.submit();">Guardar</a></p>
+			</div>
+		<!-- END: edit -->
+	</form>   
+
+
+
+
+<!-- END: main -->

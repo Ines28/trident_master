@@ -1,0 +1,37 @@
+﻿<!-- BEGIN: main -->
+
+	{__SLIDER__}
+	
+    <!-- BEGIN: calendar -->
+    <script>
+        var cldSiteUrl = "{__SITE_URL__}";
+        var cldMTotalMonths = {__MENU_TOTAL_MONTHS__};
+        var cldMItemDefault = {__MENU_MONTH_DEFAULT__};
+        var cldContentID = "{__CALENDAR_CONTENT_ID__}";
+        var status_code = {__STATUS__};
+    </script>
+ 
+    <div id="calendar">
+        
+        
+        <nav class="months">
+            <ul id="months">
+                <!-- BEGIN: month -->
+                <li>
+                    <a href="javascript: void(0);" onclick="loadCldEvents({__MONTH_NUMBER__},{__MONTH_COUNTER__});" class="{__MONTH_SELECTED__}" id="month-menu-{__MONTH_COUNTER__}">{__MONTH_LABEL__}  </a> 
+                    <div id="month-menu-line-{__MONTH_COUNTER__}" class="no-bottom-line {__MONTH_LINE__}"></div>
+                </li>
+                <!-- END: month -->
+            </ul>
+            <ul id="teatro">
+                <li><a href="javascript: void(0);" onclick="loadCldTtheater(0);" class="{__MONTH_SELECTED__}" id="month-menu-0" class="{__MONTH_SELECTED__}">Teatro</a></li>
+            </ul>
+        </nav>
+         
+         
+         <div id="{__CALENDAR_CONTENT_ID__}"></div>
+        
+    </div>
+    <!-- END: calendar -->
+    
+<!-- END: main -->

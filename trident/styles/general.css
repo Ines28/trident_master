@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+@import url("font.css");
+
+
+/* RESET */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,label {margin:0; padding:0;}
+img,body,html,abbr {border:0;}
+ul {list-style:none;}
+input, button,fieldset {border:none;}
+a, a img, object {text-decoration:none; outline:none; border:none;}
+h1, h2, h3, h4, h5, h6 {font-size:100%; font-weight:normal;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal; font-weight:normal;}
+table {border-collapse:collapse; border-spacing:0;}
+caption,th {text-align:left;}
+button{background:none;}
+a:active, a:focus {outline: 0;}
+
+/* Template Style */
+
+body { 
+	background:url(../images/bg-all.jpg) no-repeat  #025285 center top;
+	font-family: 'chaletlondonnineteenseventy';
+
+
+	/*background-image:url('paper.gif');
+background-color:#cccccc; */
+	color: #FFF;
+	font-size:12px; 
+	/*font-family: 'london nineteen seventy', 'london nineteensixty',helvetica;*/
+}
+
+.body_2{
+	background: url(../images/slider.png) rgba(0, 0, 0, 0) no-repeat right 402px;
+}
+
+.body{
+	background: url(../images/slider.png) rgba(0, 0, 0, 0) no-repeat left 402px;
+
+}
+footer{
+	background: #000;
+	height: 40px;
+	width: 100%;
+	margin: 0;
+    padding: 0;
+}
+
+#footer{
+	color: #FFF;
+	height: auto;
+	margin: 10px auto;
+	padding: 10px 0;
+	position: relative;
+	text-transform: uppercase;
+	width: 960px;
+}
+
+.ft-left{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 66%;
+}
+
+.ft-left li{
+	display: inline-block;
+	font-weight: bolder;
+	vertical-align: top;
+}
+
+.ft-left li a{
+	color: #FFF;
+}
+
+.ft-left li a span{
+	text-transform: uppercase;
+}
+
+
+
+.ft-left li a:hover{
+	color: #025082;
+}
+
+
+
+.ft-right{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.btn-login{
+	background: #004774;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: 1px 1px 6px #000;
+	-webkit-box-shadow: 5px;
+	-moz-box-shadow: 5px;
+	height: 40px;
+	position: relative;
+	text-align: center;
+	left: 135px;
+	width: 130px;
+}
+
+.btn-login a{
+	width: 130px;
+	position: relative;
+	top: 10px;
+	font-size: 18px;
+	font-weight: bolder;
+	height: 40px;
+	color: #FFF;
+}
+
+#message{
+	
+	font-size: 14px;
+	margin: 5px auto;
+	padding: 10px;
+	width: 940px;
+	text-align: center;
+}
+.advice{
+	color: #F0EE27;
+}
+
+.error{
+	color: #E92B2D;
+}
+.pass{
+	margin: 0 0 15px;
+	position: relative;
+	text-align: right;
+}
+.pass .link_1{ 
+	color: #7DC1EF !important;
+}
+
+.link_action{
+	color: #007ABC !important;
+}
+
+.link-mail{
+	text-transform: lowercase;
+}
+
+.trident_r{
+	font-size: 10px !important;
+	position: relative;
+	top: -4px;
+	left: 3px;
+	margin: 0 3px 0 0;
+}

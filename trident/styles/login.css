@@ -1,0 +1,102 @@
+/* Estilos login */
+
+@import url("font.css");
+
+
+body{
+	background: url(../images/bg_login.jpg) !important;
+}
+footer{	
+	position: absolute;
+	bottom: 2px;
+}
+
+header{
+	background: #000;
+	height: 300px;
+	width: 100%;
+}
+
+#header{
+	height: 300px;
+	margin: 0 auto;
+	width: 960px;
+}
+
+#main-login{
+	height: 450px;
+	width: 100%;
+}
+
+#login{
+	background: url(../images/guitarra-login.png) no-repeat 653px 22px;
+	height: 300px;
+	margin: 0 auto;
+	width: 960px;
+
+}
+
+#form-login{
+
+	
+	height: auto;
+	margin: 3px auto;
+	padding: 10px;
+	width: 270px;
+}
+
+
+#user, #password{
+	font-family: 'chaletlondonnineteenseventy';
+	font-weight: bolder;
+	font-size: 16px;
+	background: #0380B5;
+	height: 18px;
+	padding: 5px;
+	width: 255px;
+}
+
+#user{
+	color: #FFF;
+} 
+
+
+.required{
+	height: auto;
+	margin: 20px 0;
+	position: relative;
+}
+
+
+
+
+#user::-webkit-input-placeholder {
+    color: #FFF;
+}
+
+#user::-moz-placeholder{
+    color: #FFF;
+}
+
+
+
+#password::-webkit-input-placeholder {
+    color: #000;
+}
+
+#password::-moz-placeholder{
+    color: #000;
+}
+
+
+
+#main-login #message {
+	font-size: 14px;
+	margin: 5px auto;
+	padding: 10px;
+	width: 940px;
+	text-align: center;
+	top: 45px;
+	position: relative;
+
+}

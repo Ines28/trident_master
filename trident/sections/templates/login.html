@@ -1,0 +1,50 @@
+<!-- BEGIN: main -->
+
+
+<div id="login">
+
+	<form id="form-login" method="post" name="frmLogin" action="{__SITE_URL__}index.php?action=loginTriden&option={__OPTIO__}" >
+
+		<!-- BEGIN: login -->
+		<div  class="required">
+			<label for="user">
+				<input type="text" name="user" id="user" placeholder="usuario"> 
+			</label> 
+		</div>
+
+		<div class="required">
+			<label for="password">
+				<input type="password" name="password" id="password" placeholder="contraseña"> 
+			</label> 
+			
+		</div >
+		<div class="pass">
+			
+				<a href="{__SITE_URL__}index.php?section=login&option=recover" class="link_1">¿Olvidaste tu contraseña?</a> 
+			
+		</div>
+		<div class="btn-login">
+			<a href="javascript: void(0);" onclick="document.frmLogin.submit();">entrar</a>
+		</div>
+		<!-- END: login -->
+
+		<!-- BEGIN: recover--> 
+	
+		<div class="required">
+			<label for="user">
+				<input type="text" name="user" id="user" placeholder="usuario"> 
+			</label> 
+			<p> <br> recuerda revisar tu carpeta de correo no deseados.</p>
+		</div>
+
+		<div  class="btn-login">
+			<p class="label-join"><a href="javascript: void(0);" onclick="document.frmLogin.submit();">Recuperar</a></p>
+		</div>		
+
+		<!-- END: recover -->
+	</form>   
+
+</div>   
+
+
+<!-- END: main -->

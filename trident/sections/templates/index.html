@@ -1,0 +1,148 @@
+<!-- BEGIN: main -->
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="es"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="es"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="es"> <![endif]-->
+
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+<head>
+   
+    <meta charset="utf-8"> 
+    <meta name="author" content="web.aper.net">
+    <meta name="description" content="{__META_DESCRIPTION__}" />
+  <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+    <link rel="stylesheet" href="{__SITE_URL__}styles/normalization.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href="{__SITE_URL__}styles/{__STYLE__}.css" rel="stylesheet" type="text/css" media="screen">
+  
+  
+    <!-- BEGIN: style -->
+    <link href="{__SITE_URL__}{__STYLE_URL__}" rel="stylesheet" type="text/css" media="{__STYLE_MEDIA__}">
+    <!-- END: style -->
+  <link href="{__SITE_URL__}styles/general.css" rel="stylesheet" type="text/css" media="screen">
+
+  <link rel="shortcut icon" href="{__SITE_URL__}images/trident.ico" type="img/ico" >
+    <script src="{__SITE_URL__}scripts/libraries/modernizr-2.0.6.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    
+    <script>window.jQuery || document.write('<script src="{__SITE_URL__}scripts/libraries/jquery-1.6.2.min.js"><\/script>')</script>
+    <script type="text/javascript"> var cf_site_domain = '{__SITE_URL__}'</script>
+
+
+    
+    
+
+    
+
+    <!-- BEGIN: script -->
+    <script src="{__SITE_URL__}{__SCRIPT_URL__}"></script>
+    <!-- END: script -->
+
+    <script src="{__SITE_URL__}scripts/{__CORE__}core.js"></script>
+
+  <title>{__LABEL_TITLE__}</title>
+    
+</head>
+
+<body>
+    <!-- BEGIN: session-->
+
+    <div id="container">
+         
+          <header>
+            <div id="hd-logo"><a href="{__SITE_URL__}index.php?section=home" >Trident Mashup</a></div>
+              <div id="nav-secondary">
+                <section class="login">       
+                 
+                  <!-- BEGIN: user -->
+                  <p>{__NAME__}</p>
+                    <ul id="loginTriden">
+                      <li><a href="{__SITE_URL__}index.php?section=password" class="link_action">Cambiar Contraseña</a></li>
+                      <li><a href="{__SITE_URL__}index.php?action=loginTriden&option=logout" class="link_action">Cerrar sesión</a></li>
+                    </ul>
+                  <!-- END: user-->
+                </section> 
+                
+                <nav id="nav-main">
+                  {__NAVIGATION__}
+                </nav>
+
+                <div class="search"> 
+                  <!-- <div class="search-left"> <a href="{__SITE_URL__}index.php?section=codes">Cómo canjerar tus códigos trident</a>
+                  </div> -->
+                 <div class="search-right"> {__SEARCH__}</div>
+               </div>
+                 
+              </div>
+              
+          </header>
+          
+          <section id="main" role="main">
+            <!-- BEGIN: message -->
+              <div id="message" class="message {__MESSAGE_TYPE__}"><p>{__MESSAGE_TEXT__}</p></div>
+            <!-- END: message -->
+            <!-- BEGIN: codes -->
+              <article id="codes">{__CODES__}</article>
+            <!-- END: codes-->
+            
+            {__CONTENT__}
+          </section>             
+        
+   </div>
+  <!-- END: session-->
+  <div>
+    <!-- BEGIN: login_user -->
+        <header>
+          <div id="login"><img src="{__SITE_URL__}images/head-login.png"></div>
+        </header>
+        
+        <section id="main-login">
+          <!-- BEGIN: message -->
+            <div id="message" class="message {__MESSAGE_TYPE__}"><p>{__MESSAGE_TEXT__}</p></div>
+          <!-- END: message -->
+          {__CONTENT__}
+        </section>
+         
+
+
+    <!-- END: login_user-->
+
+
+      <footer>
+        <div id="footer">
+          <div class="ft-left">
+            <ul>
+              <li> <a href="{__SITE_URL__}index.php?section=policy"> Términos y Condiciones </a> </li> |
+              <li><a href="mailto: dbarrera@cie.com.mx" class="link-mail"> <span>dudas</span> dbarrera@cie.com.mx </a></li>
+            </ul>
+
+          
+          </div>
+
+          <div class="ft-right">
+            <p> Trident&#174;. Todos los derechos reservados</p>
+          </div>
+
+
+        </div>
+
+      </footer>
+  </div>
+   <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31760128-1']);
+  _gaq.push(['_setDomainName', 'ocesa.com.mx']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+   <!-- {__SERVER_IP__} -->
+</body>
+</html>
+<!-- END: main -->
