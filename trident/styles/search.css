@@ -1,0 +1,81 @@
+body{
+	/*background: #000 !important;*/
+}
+
+.event { width:225px; height:310px; float:left; margin: 0 6px 15px; position:relative; box-shadow: 1px 1px 6px #024268;}
+.picture {
+	width: 225px;
+	height: 225px;
+	margin: 0 0 10px;
+}
+	.name {padding: 0 10px; font-size:18px; color:#005b93; font-weight:bold;line-height:22px;}
+	.date {padding: 0 10px; font-size: 14px; font-weight:bold;}
+		.date strong { display:block; font-size: 14px; font-weight:normal;}
+	.place {padding: 0 10px;font-size: 12px; color:#363636; margin-bottom:10px; }
+	
+		
+		.event .picture a{display: block; width:168px; height:110px; }
+		
+		#search { width: 950px; height: auto; display: inline-block; padding: 20px;}
+		#search h2 { font-size:30px; line-height:32px; margin-bottom:8px; height:32px; }
+		#search .status{font-size: 14px; line-height: 14px; padding: 20px 0;}
+.more{
+	background: #000;
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.more a {
+	float: left;
+	color: #FA2D58;
+	width: 46%;
+	height: 27px;
+	line-height: 28px;
+	letter-spacing: 1px;
+}
+
+.btn-more-left {
+	position: relative;
+	font-size: 40px;
+	top: 7px;
+	left: 10px;
+}
+
+.btn-more-right {
+	font-size: 16px;
+	font-weight: bolder;
+	position: relative;
+	text-align: right;
+	text-transform: uppercase;
+	top: 7px;
+}
+
+.info_event {
+	background: url(../images/bg-eventos.png) 0 -10px no-repeat;
+height: auto;
+position: absolute;
+width: 225px;
+bottom: 40px;
+padding: 30px 0;
+}
+
+#list-event{
+	float: left;
+	height: auto;
+}
+/*pager */
+
+.pager{
+
+	display: block;
+	margin-top: 15px;
+	text-align: center;
+}
+.pager a{
+	background: #006EB9;
+	padding: 5px 10px;
+	color: #FFF;
+}

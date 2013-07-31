@@ -1,0 +1,50 @@
+<!-- BEGIN: main -->
+
+<script>
+	var sldItems = {__SLD_ITEMS__};
+	var sldThmbCurr = 1;
+	var sldSpeed = '{__SLD_SPEED__}';
+	var sldLeadCurr = 1;
+	var sldInterval = null;
+	var sldTime = {__SLD_TIME__}000;
+</script>
+
+<div id="slider">
+	
+	<div id="sld-slides">
+    	<div id="sld-roll">
+        	<!-- BEGIN: slide -->
+            <div class="sld-slide">
+            	<div class="sld-picture" style="background: url(images/slider/{__SLD_PICTURE__}) no-repeat center;">
+                	<!-- BEGIN: url -->
+                	<a href="{__SLD_URL__}" target="{__SLD_TARGET__}" class="url"></a>
+                    <!-- END: url -->
+                    
+                    
+                    
+                </div>
+
+                <div class="details">
+                        
+                        <!-- BEGIN: title -->
+                        <div class="title">{__SLD_TITLE__}</div>
+                        <!-- END: title -->
+                     
+                </div>
+            </div>  
+            <!-- END: slide -->
+
+        </div>
+    </div>
+    
+    <div id="sld-thumbnails">
+             	
+    	<!-- BEGIN: thumb -->
+        <a href="javascript: void(0);" data-rel="{__SLD_COUNT__}" id="sld-thumbnails-thumb{__SLD_COUNT__}"></a>
+        <!-- END: thumb -->
+              
+    </div> 
+    
+</div>
+    
+<!-- END: main -->

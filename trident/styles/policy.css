@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* Policy Style */
+.body_2{
+	background: none !important;
+}
+
+.body{
+	background: none !important;
+
+}
+
+#policy-section{
+	width: 890px;
+	height: auto;
+	margin: 10px auto 0 auto;
+}
+
+
+#policy-section h2 { font-size:30px; line-height:32px; margin: 30px 0 0 0; }
+#policy-section h3 { font-size:20px; line-height:22px;margin: 18px 0 0 10px;}
+
+#policy-section p{
+	margin: 20px 0 0 0!important;
+}
+
+
+#policy-section a{
+	color: #F0EE27;
+
+}

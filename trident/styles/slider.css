@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* Slider Style */
+
+#slider{
+	width: 990px;
+	height: 405px;
+	position: relative;
+	margin-bottom: 8px;
+}
+
+#slider #sld-slides{
+	width: 980px;
+	height: 393px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 1;
+	overflow: hidden;
+}
+
+#slider #sld-roll{
+	width: 20000px;
+	height: 393px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#slider .sld-slide .sld-picture{
+	width: 555px;
+	height: 393px;
+	float: left;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+
+#slider .sld-slide{
+	width: 980px;
+	height: 393px;
+	float: left;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+#slider  .details{
+	float: left;
+	width: 424px;
+	height: 392px;
+	position: relative;
+	z-index: 2;
+	
+}
+
+
+
+#slider #sld-thumbnails{
+	width: auto;
+	height: 17px;
+	position: absolute;
+	bottom: 16px;
+	right: 376px;
+	z-index: 3;
+	text-align: right;
+}
+
+
+/***********************************
+* Fonts
+***********************************/
+
+#slider .details .title{
+	position: absolute;
+	top: 92px;
+	left: 28px;
+	width: auto;
+	height: auto;
+	color: #FFF;
+	font-size: 22px;
+	line-height: 25px;
+	text-align: left;
+}
+
+/***********************************
+* Links
+***********************************/
+
+#slider .sld-slide a.url{
+	width: 960px;
+	height: 360px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+
+#slider #sld-thumbnails a{
+	display: inline-block;
+	width: 18px;
+	height: 17px;
+	background: url(../images/sld-thumb.png) -18px 0 no-repeat;
+	margin: 0 0 0 0;
+}
+
+
+#slider #sld-thumbnails a:hover, #slider #sld-thumbnails a.selected{
+	background: url(../images/sld-thumb.png) 0 0 no-repeat;
+}

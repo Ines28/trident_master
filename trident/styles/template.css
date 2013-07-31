@@ -1,0 +1,454 @@
+@import url("font.css");
+
+
+#container { width:960px; margin: 0 auto; }
+header { 
+	height: 162px;
+	width: 100%;
+	background: #000;
+	position: relative;
+}
+		#hd-logo { width:205px; height:162px; background:url(../images/logo.png);text-indent: 100%;white-space: nowrap; overflow: hidden; position:relative; top:14px; left:14px;}
+		#hd-logo  a{ width:205px; height:162px; display: block;}
+		#nav-secondary { width:775px; padding:10px 0px 10px 12px; 
+			 position:absolute; right:0px; top:10px; overflow:hidden;
+			-moz-border-radius-topleft: 4px;
+			-moz-border-radius-topright: 0px;
+			-moz-border-radius-bottomright: 0px;
+			-moz-border-radius-bottomleft: 4px;
+			-webkit-border-radius: 4px 0px 0px 4px;
+			border-radius: 4px 0px 0px 4px; }
+		.mod-login{
+			display: inline-block;
+			
+		}
+
+.login{
+	text-align: right;
+	padding: 10px;
+	width: auto;
+}
+
+.login p{
+	text-transform: uppercase;
+}
+
+.login li{				
+	display: inline-block;
+	height: auto;
+	width: auto;
+	font-size: 14px;
+	line-height: 16px;
+	margin: 10px 9px;
+	text-align: right;
+	padding: 0;
+}
+
+			/*.login li{
+	
+	
+	
+	
+}*/
+.search {
+	position: relative;
+	background: #0078C1;
+	float: left;
+	height: 30px;
+	margin-right: 0;
+	padding: 0 0 0 5px;
+	width: 250px;
+}
+
+#search-top { 
+	font-family: 'chaletlondonnineteenseventy';
+	background-color: #015184;
+	color: #FFF;
+	width: 212px;
+	height: 22px;
+	padding: 2px;
+	font-size: 13px;
+	line-height: 19px;
+	margin: 2px 0;
+}
+				#search-btn { vertical-align:top;}
+			#nav-networks li { float:left; width:22px; margin-right:5px;}
+#nav-main { 
+	float: left;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	height: 33px;
+	/*width: 557px;*/
+}
+			#nav-main ul { width:100%; height:100%;}
+				#nav-main ul li { float:left; height:100%; width:auto;  }
+/*					#nav-main ul li a { display:block; width:auto; height:100%; text-align:center; color:#FFF; line-height:33px; font-size:16px; text-transform:uppercase; border-right:#2578ac 1px solid;text-shadow: 1px 1px 0px #000000;filter: dropshadow(color=#000000, offx=1, offy=1); padding: 0 40px; }*/
+#nav-main ul li a { 
+	
+	display:block; 
+	width:auto; 
+	height:100%; 
+	text-align: center;
+	color: #FFF; 
+	line-height:33px; 
+	font-size:16px; 
+	text-transform:uppercase; 
+	text-shadow: 1px 1px 0px #000000;
+	filter: dropshadow(color=#000000, offx=1, offy=1); 
+	padding: 0 30px; }
+/*					#nav-main ul li a:hover {background: #0095FF;}*/
+					#nav-main ul li a:hover {color: #F0EE27;}
+					#nav-main ul li a.selected { color: #F0EE27; background:url(../images/bg-menuactive.jpg) repeat-x;}
+					#nav-main ul li a.selected:hover { color:#FFFFFF;}
+
+	footer {clear:both; 
+		 padding-top:8px; position: relative; height: 50px;}
+		#copyright { float:left; color:#b2b2b2;}
+		#policy { position: absolute; top: 8px; left: 370px; width: auto; height: auto;}
+			#policy a { color: #999;}
+		#clubpremier-link { float:right; font-size:14px; color:#636363; text-align:right; }
+			#clubpremier-link a {font-weight:bold; color:#262626;}
+			#clubpremier-link a:hover {color:#005487;}
+		#apernet{ position: absolute; left: 420px; top: 30px; width: auto; height: auto;}
+
+.search-left{
+	float: left;
+	font-size: 14px;
+	margin:7px 10px;
+	text-transform: uppercase;
+}
+
+
+.search-left a{
+	color: #FFF;
+}
+
+
+
+/** CODES**/
+
+#codes{
+	height: auto;
+	position: relative;
+	text-transform: uppercase;
+}
+
+#instructions{
+	background: #00365C;
+	height: 95px;
+}
+
+.ins_1{
+	border-bottom: #004882 1px solid;
+	font-weight: bolder;
+	padding: 9px 0 5px 20px;
+	color: #F0EE27;
+	height: 16px;
+}
+
+.ins_2{
+	border-right: #004882 1px solid;
+	float: left;
+	width: auto;
+	margin: 5px;
+	padding: 5px 50px 5px 10px;
+	height: 44px;
+}
+
+.img-ins{
+	margin: 5px 10px;
+}
+
+.ticket_ins{
+	position: absolute;
+	top: 0;
+	background: #006EB9;
+	right: 0;
+	height: 95px;
+	width: 215px;
+}
+
+.btn-ticket{
+	cursor:pointer;
+	float: left;
+	margin: 15px 9px;
+}
+
+.btn-ticket_1{
+	float: left;
+	position: relative;
+	margin: 18px 0 0 6px;
+	width: 46px;
+}
+
+.btn-ticket_2{
+	float: left;
+	margin: 28px 0;
+	width: 108px;
+}
+
+#cards{
+	background: #002744;
+	height: 125px;
+	margin: 20px 0 0;
+}
+
+#cards img{
+	display: inline-block;
+	position: relative;
+	margin: 20px;
+	vertical-align: top;
+} 
+
+
+#cards-mask{
+	display: inline-block;
+	height: 125px;
+	overflow: hidden;
+	width: 774px;
+	position: absolute;
+	top: 115px;
+	left: 106px;
+}
+
+#codes-list-container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: auto;
+	height: 60px;
+}
+#cards-mask li{
+	background: #0279BB;
+	display: inline-block;
+	height: 95px;
+	vertical-align: top;
+	width: 205px;
+	margin: 17px 25px;
+	text-align: center;
+}
+
+.code{
+	background: #0279BB;
+	color: #FFF;	
+	float: left;
+	height: 95px;
+	width: 205px;
+	margin: 17px 25px;
+	text-align: center;
+}
+
+.code .msg{
+	position: relative;
+	top: 31px;
+}
+
+.code_valid{
+	color: #FFF;
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.code_valid span{
+	display: block;
+	font-size: 20px;
+	margin: 11px 0;
+}
+
+.code_valid span.date{
+	font-size: 14px;
+}
+
+.user_code{
+	border-right: 1px solid #FFF;
+	height: 50px;
+	margin: 5px;
+	float: left;
+	width: 88px;
+}
+.user_code strong{
+	display: block;
+	position: relative;
+	top: 6px;
+	font-weight: 100;
+	font-size: 16px;
+}
+
+.user_code span{
+	position: relative;
+	top: 10px;
+}
+.detail_code{
+	font-size: 11px;
+	display: inline-block;
+	margin: 0;
+	text-align: left;
+	width: 103px;
+}
+
+
+#codes-arrow-up{
+	height: 95px;
+	position: absolute;
+	width: 65px;
+	top: 112px;
+	left: 0px;
+}
+
+#codes-arrow-down{
+	height: 95px;
+	position: absolute;
+	width: 65px;
+	top: 112px;
+	right: 40px;
+}
+
+#codes-list-containe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: auto;
+	height: 126px;
+}
+.detail_code p{
+	margin: 2px 0;
+}
+
+.finish_date{
+	font-size: 8px;
+}
+
+.disable{
+	background: #CFCFCF;
+}
+
+.bg-home{
+	background: url(../images/side.png);
+	width: 225px;
+	height: auto;
+	position: absolute;
+}
+
+.bg-home-left{ 
+	position: absolute;
+	top: 355px;
+	left: 0;
+	z-index: 100;
+}
+
+.bg-home-rigth{ 
+	position: absolute;
+	top: 355px;
+	right: 0;
+	z-index: 100;
+}
+
+
+/* LOGIN*/
+
+#login{
+
+	height: auto;
+	margin: 0 auto;
+	width: 960px;
+
+}
+
+#form-login{
+	height: auto;
+	margin: 3px auto;
+	padding: 10px;
+	width: 270px;
+}
+
+
+
+#password_1, #password_2,#password_3{
+	font-family: 'chaletlondonnineteenseventy';
+	background: #0380B5;
+	height: 18px;
+	padding: 5px;
+	width: 255px;
+	color: #FFF;
+}
+
+#user{
+	color: #FFF;
+} 
+
+
+.required{
+	height: auto;
+	margin: 20px 0;
+	position: relative;
+}
+
+
+
+#password_1::-webkit-input-placeholder {
+    color: #FFF;
+}
+
+#password_1::-moz-placeholder{
+    color: #FFF;
+}
+
+
+
+#password_2::-webkit-input-placeholder,#password_3::-webkit-input-placeholder {
+    color: #000;
+}
+
+#password_2::-moz-placeholder,#password_3::-webkit-input-placeholder{
+    color: #000;
+}
+.codes_triden{
+	margin: 30px;
+	padding: 10px;
+	width: 90%;
+}
+
+.codes_triden h2{
+	font-size: 18px;
+	font-weight: bolder;
+	margin:10px;
+}
+
+.codes_triden ol{
+	margin: 21px;
+}
+
+.codes_triden ol li{
+	font-size: 15px;
+	margin: 3px 5px;
+}
+
+.codes_triden p strong{
+	font-weight: bold;
+	font-size: 15px;
+	position: relative;
+	margin: 36px 0;
+}
+
+.codes_triden a {
+	color: #F0EE27;
+}
+
+.ticket_date{
+	color: #F0EE27;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.code_active{
+	position: relative;
+	margin: 7px 0 2px 0;
+}
+
+.code_active strong{
+	margin: 10px 0;
+	font-size: 16px;
+	font-weight: bolder !important;
+}
