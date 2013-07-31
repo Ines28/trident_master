@@ -1,0 +1,191 @@
+<!-- BEGIN: main -->
+
+	<script>
+		var url_domain = '{__SITE_URL__}';
+        var status_code = {__STATUS__};
+	</script>
+
+	<div id="event">
+		
+       <!-- <div class="column-center">{__EVENT_CLASSIFICATION__}</div>-->
+
+        <div class="column-left">
+            
+            <h3>{__EVENT_NAME__}</h3>
+            
+            
+            <!-- BEGIN: podcast -->
+            <script type="text/javascript">
+					//<![CDATA[
+					$(document).ready(function(){
+					
+						$("#jquery_jplayer_1").jPlayer({
+							ready: function (event) {
+								$(this).jPlayer("setMedia", {
+									mp3:"http://www.ocesa.com.mx/events/audios/{__PODCAST_MP3__}"
+								});
+							},
+							swfPath: "{__SITE_URL__}scripts/libraries/jplayer",
+							supplied: "mp3",
+							wmode: "window"
+						});
+					});
+					//]]>
+			</script>
+                
+            <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                	
+            <div id="event-podcast">
+                	<div id="jp_container_1" class="jp-audio">
+						<div class="jp-type-single">
+							<div class="jp-gui jp-interface">
+                                <ul class="jp-controls">
+                                    <li><img src="{__SITE_URL__}images/event-btn-podcast-rss.png" alt="rss" /></li>
+                                    <li><a href="#" class="jp-mute"></a></li>
+                                    <li><a href="#" class="jp-unmute"></a></li>
+                                    <li><a href="#" class="jp-play"></a></li>
+                                    <li><a href="#" class="jp-pause"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+           	</div>  
+           	<!-- END: podcast -->
+            
+            <!-- BEGIN: video_player -->
+                
+                <script>
+					var evideosTotal = {__VIDEO_TOTAL__};
+					var evideosCurr = 1;
+					
+					$(document).ready(function () {
+						$(".event-picture-thumb").fancybox();
+					});
+				</script>
+                
+                <div class="event-video">
+                	<div id="player" style="background: #000000 url({__PICTURE_LEAD__}) center no-repeat;">
+                    	<!-- BEGIN: video -->
+                    	<object width="700" height="420"><param name="movie" value="http://www.youtube.com/v/{__VIDEO_YOUTUBE__}?version=3&amp;hl=es_ES"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/{__VIDEO_YOUTUBE__}?version=3&amp;hl=es_ES" type="application/x-shockwave-flash" width="700" height="420" allowscriptaccess="always" allowfullscreen="true" wmode="transparent"></embed></object>
+                        <!-- END: video -->
+                    </div>
+                    <!-- BEGIN: thumbnails -->
+                    <div class="thumbnails">
+                    	<!-- BEGIN: arrowleft -->
+                    	<div class="arrow-l"><a href="javascript: void(0);" onclick="evslideLeft();" title="atr&aacute;s"><img src="{__SITE_URL__}images/event-btn-video-arrow-f-l.png" alt="<" /></a></div>
+                        <!-- END: arrowleft -->
+                        <div class="container">
+                        	<div id="video-full-thumbs-roll">
+                            	<!-- BEGIN: thumbVideo -->
+                            	<div class="thumb"><div class="picture" style="background: url({__VIDEO_THUMBNAIL__}) no-repeat center;"><a href="javascript: void(0);" onclick="loadVideo({__VIDEO_ID__});"></a></div></div>
+                                <!-- END: thumbVideo -->
+                                <!-- BEGIN: thumbPicture -->
+                            	<div class="thumb"><div class="picture" style="background: url({__PICTURE_THUMBNAIL__}) no-repeat center;"><a href="{__PICTURE_FILE__}" class="event-picture-thumb"></a></div></div>
+                                <!-- END: thumbPicture -->
+                            </div>
+                        </div>
+                        <!-- BEGIN: arrowright -->
+                        <div class="arrow-r"><a href="javascript: void(0);" onclick="evslideRight();" title="adelante"><img src="{__SITE_URL__}images/event-btn-video-arrow-f-r.png" alt=">" /></a></div>
+                        <!-- END: arrowright -->
+                    </div>
+                    <!-- END: thumbnails -->
+                </div>
+                <!-- END: video_player -->
+            
+            
+            <div class="content">
+                
+                <div class="description">
+                    {__EVENT_DESCRIPTION__}
+                </div>
+                            
+            </div>
+            
+            
+           <!-- <div class="comments">
+            	
+                <div id="fb-root"></div>
+				<script>(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=269984469744756";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+                
+                <div class="fb-comments" data-href="{__SITE_URL__}cartelera/{__EVENT_ALIAS__}/" data-num-posts="2" data-width="640"></div>
+                
+            </div> -->
+                    
+                    
+                
+            
+        </div>
+        
+        <div class="column-right">
+            
+            
+            <div class="block">
+                <ul class="networks">	
+
+           
+                    <li><a href="javascript: void(0);" onclick="window.open('https://twitter.com/intent/tweet?original_referer=http://www.ocesa.com.mx/cartelera/{__EVENT_ALIAS__}&source=tweetbutton&text=Gracias a @Trident_mx me voy a ver a %23{__EVENT_NAME_R__}&url={__EVENT_URL__}&via=Trident_mx','ventanacompartir', 'toolbar=0, status=0, width=450, height=250');"  id="twitter-2">twitter</a></li>
+
+
+                    <li><a href="javascript: void(0);" onclick="window.open('http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]={__EVENT_URL__}&amp;p[summary]={__SHARE_INTRO__}&amp;p[title]=Gracias a @Trident_mx me voy a ver a {__EVENT_NAME_R__}&amp;p[images][0]={__PICTURE_THUMBNAIL__}','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');" id="facebook-2">facebook</a></li>
+                    
+                    <li><a href="javascript: void(0);" onclick="window.open('https://plus.google.com/share?url={__EVENT_URL__}','ventanacompartir', 'toolbar=0, status=0, width=350, height=150');" id="plus-2">plus</a></li>
+                </ul>
+                    
+            </div>
+            
+           
+            <div id="triden">
+                <p><a href="{__EVENT_TICKETMASTER__}" target="_blank"><span>Canjea tus códigos</span>  <strong>trident<span class="trident_r">®</span> </strong> para este evento </a></p>
+            </div>
+
+            <div class="trident_info">
+                <p>El canje de códigos Trident<span class="trident_r">®</span> solo es para eventos operados por OCESA y a través de la página www.trident.ocesa.com.mx.<a href="{__SITE_URL__}index.php?section=policy" > Consulta los términos y condiciones</a>.</p>
+            </div>
+            <div class="block">
+				<!--<h4>Fechas</h4>-->
+                <ul class="dates">
+                    <!-- BEGIN: date -->
+                    <li><span class="date">{__EVENT_DATE__} <strong>{__EVENT_TIME__}</strong></span> <span class="place">{__EVENT_PLACE__}</span></li>
+                    <!-- END: date -->
+                </ul>
+            </div>
+            
+			<!-- <div id="clubpremier-card"> -->
+            	<!-- BEGIN: link -->
+				<!-- <a href="{__EVENT_LINK__}" id="tmaeromexico-link" target="_blank">Canjea tu tarjeta</a> -->
+                <!-- END: link -->
+				<!-- <img src="{__SITE_URL__}images/img-tarjetaclubpremier.jpg" width="210" height="133" alt="rss" /> 
+            </div> -->
+     
+            
+            
+            <!-- BEGIN: events_related -->
+            <div class="block">
+                <h4>Recomendados</h4>
+                <!-- BEGIN: event -->
+                <div class="events_related">
+                    <div class="thumb" style="background: #999999 url({__RELATED_COVER__}) no-repeat;"><a href="{__RELATED_URL__}"></a></div>
+                    <div class="info">
+                        <div class="name"><a href="{__RELATED_URL__}">{__RELATED_NAME__}</a></div>
+                        <div class="date">{__RELATED_DATE__}</div>
+                    </div>
+                    
+                </div>
+                <!-- END: event -->
+            </div>
+            <!-- END: events_related -->
+            
+        </div>
+        
+                   
+                     
+    </div>
+    
+<!-- END: main -->

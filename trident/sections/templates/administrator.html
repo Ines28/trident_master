@@ -1,0 +1,248 @@
+﻿<!-- BEGIN: main -->
+
+<script type="text/javascript" > 
+
+   
+
+        
+    
+</script>
+	<div id="administrator">
+		
+    	<h2>Administrador</h2>
+        <!-- BEGIN: message -->
+              <div id="message" class="message {__MESSAGE_TYPE__}"><p>{__MESSAGE_TEXT__}</p></div>
+        <!-- END: message -->
+
+        <!-- BEGIN: login -->
+        <div id="login">
+        	<form id="frmLogin" name="frmLogin" method="post" action="{__SITE_URL__}index.php?action=login">
+                <table id="login">
+                  <tr>
+                    <th valign="middle" scope="col"><table width="100%">
+                      <tr>
+                        <td align="right" valign="middle" scope="col"><label>usuario:</label></td>
+                        <td align="left" valign="middle" scope="col"><input name="user" type="text" class="input1" tabindex="1" /></td>
+                        </tr>
+                      <tr>
+                        <td align="right" valign="middle"><label>password:</label></td>
+                        <td align="left" valign="middle"><input name="password" type="password" class="input1" tabindex="2" /></td>
+                        </tr>
+                        <tr>
+                        <td align="right" valign="middle"></td>
+                        <td height="10" align="left"><input type="submit" name="Submit" value="ingresar" id="btn_login" tabindex="3" /></td>
+                      </tr>
+                      
+                    </table></th>
+                  </tr>
+                </table>
+</form>
+        </div>    
+     	<!-- END: login -->
+        
+        
+        <!-- BEGIN: view -->
+        <div id="view">
+        
+        	<div class="session">{__USER_NAME__} <a href="{__SITE_URL__}index.php?action=logout">cerrar sesi&oacute;n</a></div>
+            
+            <!-- BEGIN: slides -->
+            
+            <h3>Slider</h3>
+            
+            	<script>
+					
+					function deleteSlide(slide){
+	
+						question = "¿Realmente desea eliminar este slide?";
+						url = "{__SITE_URL__}index.php?action=deleteSlide&slide="+slide;
+						
+						var answer = confirm(question);	
+						if(answer){
+							this.location.href = url;
+						}
+						
+					}
+					
+					
+					
+				</script>
+            
+            	
+            
+                <!-- BEGIN: items -->
+                <form name="frmItems" id="frmItems" method="post" action="{__SITE_URL__}index.php?action=updateSliderOrdering">
+                    <table id="tblItems">
+                        <tr class="tbl_header">
+                            <th align="left" valign="middle">T&iacute;tulo</th>
+                            <th align="center" valign="middle">
+                                Orden 
+                                <!-- BEGIN: save -->
+                                <a href="javascript: void(0);" onclick="document.frmItems.submit(); return false;" title="guardar orden"><img src="{__SITE_URL__}images/bd-icon-save.png" alt="guardar" /></a>
+                                <!-- END: save -->
+                            </th>
+                            <th align="center" valign="middle">Publicado</th>
+                            <th align="center">Acciones</th>
+                        </tr>
+                        <!-- BEGIN: item -->
+                        <tr {__ROW_CLASS__}>
+                            <td align="left">{__TITLE__}</td>
+                            <td align="center"><input type="text" name="item_{__ITEM__}" value="{__ORDERING__}" class="frm-input3" /></td>
+                            <td align="center">
+                                <!-- BEGIN: published -->
+                                <a href="{__SITE_URL__}index.php?action=publishSlide&item={__ITEM__}&set=no" title="despublicar"><img src="{__SITE_URL__}images/bd-icon-published.png" alt="publicado" /></a>
+                                <!-- END: published -->
+                                <!-- BEGIN: unpublished -->
+                                <a href="{__SITE_URL__}index.php?action=publishSlide&item={__ITEM__}&set=yes" title="publicar"><img src="{__SITE_URL__}images/bd-icon-unpublished.png" alt="no publicado" /></a>
+                                <!-- END: unpublished -->
+                            </td>
+                            <td align="center">
+                            <!-- BEGIN: edit -->
+                            <a href="{__SITE_URL__}index.php?section=administrator&view=editSlide&item={__ITEM__}" title="editar"><img src="{__SITE_URL__}images/bd-icon-edit.png" alt="editar" /></a>
+                            <!-- END: edit -->
+                            <!-- BEGIN: delete -->
+                            <a href="javascript: void(0);" onclick="deleteSlide('{__ITEM__}');" title="eliminar"><img src="{__SITE_URL__}images/bd-icon-delete.png" alt="eliminar" /></a>
+                            <!-- END: delete -->
+                            </td>
+                        </tr>
+                        <!-- END: item -->
+                    </table>
+                </form>
+                <!-- END: items -->
+                
+                <div class="new_slide"><a href="{__SITE_URL__}index.php?section=administrator&view=newSlide" class="button_adm">nuevo slide</a></div>
+            
+            <!-- END: slides -->
+            
+            
+            
+            
+            
+            
+            
+            <!-- BEGIN: newSlide -->
+            
+            <h3>Slide</h3>
+            
+            	<script>
+				
+					function deletePicture(picture){
+						
+						question = "¿Realmente desea eliminar esta imagen?";
+						url = "{__SITE_URL__}index.php?action=deletePicture&picture="+picture;
+						
+						var answer = confirm(question);	
+						if(answer){
+							this.location.href = url;
+						}
+						
+					}
+					
+				</script>
+            
+                <form name="frmNewItem" id="frmNewItems" method="post" enctype="multipart/form-data" action="{__SITE_URL__}index.php?action={__ACTION__}">
+                    
+                    <input type="hidden" name="slide" id="slide" value="{__SLIDE__}" />
+                        <table class="tblForm">
+                            
+                            <tr>
+                                <td><label>T&iacute;tulo:</label></td>
+                                <td><input type="text" name="title" value="{__TITLE__}" class="frm-input1"/></td>
+                            </tr>
+                            <tr>
+                                <td><label>Subt&iacute;tulo:</label></td>
+                                <td><input type="text" name="subtitle" value="{__SUBTITLE__}" class="frm-input1"/></td>
+                            </tr>
+                            <tr>
+                                <td><label>Iniciar publicaci&oacute;n:</label></td>
+                                <td><input type="text" name="date_from" value="{__DATE_FROM__}" class="frm-input4" /> <span class="note">formato: aaaa-mm-dd hh:mm:ss</span></td>
+                            </tr>
+                            <tr>
+                                <td><label>Finalizar publicaci&oacute;n:</label></td>
+                                <td><input type="text" name="date_to" value="{__DATE_TO__}" class="frm-input4" /> <span class="note">formato: aaaa-mm-dd hh:mm:ss &oacute; nunca</span></td>
+                            </tr>
+                            <tr>
+                                <td><label>Link:</label></td>
+                                <td><input type="text" name="url" value="{__URL__}" class="frm-input1"/></td>
+                            </tr>
+                            <tr>
+                                <td><label>Ventana:</label></td>
+                                <td>
+                                    <select name="target">
+                                        <option value="_self" {__TARGET_SELECTED_SELF__}>misma</option>
+                                        <option value="_blank" {__TARGET_SELECTED_BLANK__}>nueva</option>
+                                    </select>                    </td>
+                            </tr>
+                            <tr>
+                                <td><label>Publicado:</label></label></td>
+                                <td><input type="radio" name="published" value="1" {__PUBLISHED_SELECTED_1__} /> s&iacute; <input type="radio" name="published" value="0" {__PUBLISHED_SELECTED_0__}/> no</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td align="right">
+                                <input type="button" name="cancel" value="cancelar" onclick="location.href='{__SITE_URL__}index.php?section=administrator&view=slides'" />
+                                <input type="submit" name="button" id="button" value="Guardar" />                 </td>
+                            </tr>
+                        </table>
+                    
+                </form>
+                
+                
+                <h4>Im&aacute;genes</h4>
+                
+                <!-- BEGIN: pictures -->
+                <table class="tblGeneral">
+                    <tr>
+                        <th class="align-center">Principal</th>
+                        <th class="align-left">Imagen</th>
+                        <th class="align-center">Acciones</th>
+                    </tr>
+                    <!-- BEGIN: picture -->
+                    <tr {__ROW_CLASS__}>
+                        <td class="align-center"><a href="{__SITE_URL__}index.php?action=leadPicture&picture={__PICTURE_ID__}&slide={__SLIDE__}&active={__LEAD_OPTION__}" class="star-button{__LEAD_ACTIVE__}" title="{__LEAD_TITLE__}"></a></td>
+                        <td class="align-left"><img src="{__PICTURE_URL__}{__PICTURE_THUMBNAIL__}" alt="{__PICTURE_THUMBNAIL__}" width="180" height="42" /></td>
+                        <td class="align-center">
+                            <a href="javascript: void(0);" onclick="deletePicture('{__PICTURE_ID__}');">eliminar</a>        </td>
+                        
+                    </tr>
+                    <!-- END: picture -->
+                </table> 
+                <!-- END: pictures -->
+                
+                <!-- BEGIN: addPicture -->
+                <form name="frmNewPicture" id="frmNewPicture" method="post" enctype="multipart/form-data" action="{__SITE_URL__}index.php?action=addPicture">
+                    <input type="hidden" name="slide" id="slide" value="{__SLIDE__}" />
+                    <table class="tblForm">
+                        <tr>
+                            <td><label>Imagen:</label></td>
+                            <td><input name="picture" type="file" id="picture" />   </td>
+                            <td>
+                                 <input type="submit" name="button" id="button" value="agregar" /> <span class="note">medidas: {__SLIDE_WIDTH__} x {__SLIDE_HEIGHT__} pixeles</span>                 
+                             </td>
+                        </tr>
+                        
+                    </table>
+                </form>
+                <!-- END: addPicture -->
+                
+                
+                
+                <!-- BEGIN: modMsg -->
+                <p class="msg">{__MSG__}</p>
+                <!-- END: modMsg --> 
+            
+            
+            <!-- END: newSlide -->
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <!-- END: view -->        
+                     
+    </div>
+    
+<!-- END: main -->

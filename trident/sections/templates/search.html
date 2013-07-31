@@ -1,0 +1,57 @@
+<!-- BEGIN: main -->
+<script type="text/javascript">
+    var status_code = {__STATUS__};
+</script>
+
+	<div id="search">
+		
+            <h2>Resultados de la B&uacute;squeda</h2>
+            
+            
+            <!-- BEGIN: status -->
+            <div class="status">
+                <strong>{__RESULTS_TOTAL__} resultado(s)</strong> Texto a buscar: {__SEARCHWORDS__}
+            </div>
+            <!-- END: status -->
+            
+            
+            <!-- BEGIN: results -->
+           <div id="list-event">
+            
+            <!-- BEGIN: result -->
+            <div class="event {__NOMARGIN_RIGHT__}">
+                <div class="picture" style="background: #000000 url({__EVENT_COVER__}) center {__COVER_POSITION__} no-repeat;"><a href="{__SEARCH_URL__}"></a></div>
+
+                <div class="info_event">
+                    <div class="name">{__SEARCH_TITLE__}</div>
+                </div>
+                
+                <div class="more">
+                 <!--   <a href="{__SEARCH_URL__}">M&aacute;s informaci&oacute;n</a></div>-->
+
+
+                <a href="{__SEARCH_URL__}" class="btn-more-left"> + </a> 
+
+                <a href="{__SEARCH_URL__}" class="btn-more-right"> más</a></div>
+
+            </div>
+            <!-- END: result -->
+            </div>
+            <!-- BEGIN: pager -->
+            <div class="pager">
+                <!-- BEGIN: prev --><a href="{__PAGER_PREV__}" class="lnk_pager_prev"><</a><!-- END: prev -->
+                <!-- BEGIN: number -->
+                <a href="{__PAGER_URL__}" class="{__PAGER_NUMBER_STYLE__}">{__PAGER_NUMBER__}</a> <!-- BEGIN: separator --> <!-- END: separator -->
+                <!-- END: number -->
+                <!-- BEGIN: next --><a href="{__PAGER_NEXT__}" class="lnk_pager_next">></a><!-- END: next -->
+            </div>
+            <!-- END: pager -->
+            
+            
+            <!-- END: results -->
+            
+                   
+                     
+    </div>
+    
+<!-- END: main -->

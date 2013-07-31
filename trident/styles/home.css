@@ -1,0 +1,119 @@
+@import url("font.css");
+
+
+#calendar { width: 960px;}
+	.months { 
+		padding:0 10px; 
+		width:930px; height:42px; background: #00223B;position: relative;
+		margin-bottom: 15px;
+	}
+		.months #months { float: left; position:relative; left:-10px; height:100%; width:93%;}
+		.months #months li, .months #teatro li{ float:left; height:100%; font-weight:bold; }
+			.months #months li a{display:block;padding:0 10px; width:101px; height:100%; text-align:center;line-height:50px; font-size:16px; text-transform:uppercase; color:#FFF;}
+
+			.months #teatro li a {display:block; height:100%; text-align:center;line-height:50px; font-size:16px; text-transform:uppercase; color:#FFF;}
+		
+.months li a.selected { 
+	/*background:url(../images/bg-eventsmenu-active.png) no-repeat; */
+	color:#FFF11D !important; 
+}
+#modcal_events {/*padding: 20px 10px 0; background:url(../images/bg-eventshome.gif) no-repeat left top; */min-height:110px;}
+.event { 
+	width:225px; 
+	height:355px; 
+	float:left; 
+	overflow: hidden;
+	margin: 15px 7px 15px;
+	position:relative; 
+	box-shadow: 1px 1px 6px #024268;
+}
+	.picture { width:225px; height:245px;  margin:0 0 10px;}
+	.picture  a{ width:168px; height:110px; display: block;}
+	.name {padding: 0 10px; font-size:18px; color:#000; font-weight:bold;line-height:22px;}
+	.name  a{color:#2C8DEB;text-decoration: none; text-transform: uppercase;font-family: Helvetica,Arial, 'chaletnewyorknineteeneighty';}
+	.date {padding: 0 10px; font-size: 14px; font-weight:bold; color: #8DCCF7;}
+		.date strong { display:block; font-size: 14px; font-weight:normal;}
+	.place {padding: 0 10px;font-size: 12px; color:#8DCCF7; margin-bottom:10px; }
+.more {
+	background: #000;
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.more_dates{
+	position: relative;
+	padding: 5px 10px;
+}
+
+.dates-count {
+	color: #FFF !important;
+	font-size: 11px !important;
+	width: 11px;
+	height: 14px;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url(../images/btn-calendar.jpg);
+	color: #FFF;
+	text-decoration: none;
+	padding: 14px 4px 4px 25px;
+}
+
+.dates-count:visited {
+	color: #FFF;
+	background-position: left -64px;
+}
+.dates-count:hover {
+	color: #FFF;
+	background-position: left -32px;
+}
+
+.more_dates a{
+	color: #FA2D58;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Helvetica,Arial, 'chaletnewyorknineteeneighty';
+}
+
+
+
+	.more a { 
+		float: left;
+		color:#FA2D58; 
+		width:46%; 
+		height:27px;  
+		line-height:28px; 
+		letter-spacing:1px;
+	}
+.more_dates a:hover{
+	color: #8DCCF7;
+}
+
+.btn-more-left{
+	position: relative;
+	font-size: 40px;
+	top: 7px;
+	left: 10px;
+}
+
+.btn-more-right{
+	font-size: 16px;
+	font-weight: bolder;
+	position: relative;
+	text-align: right;
+	text-transform: uppercase;
+	top: 7px;
+}
+
+.info_event{
+	background: url(../images/bg-eventos.png) 0 -10px no-repeat ;
+	height: auto;
+	position: absolute;
+	width: 225px;
+	bottom: 40px;
+	padding: 30px 0;
+}

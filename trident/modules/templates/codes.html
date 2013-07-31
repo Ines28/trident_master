@@ -1,0 +1,103 @@
+<!-- BEGIN: main -->
+	<script type="text/javascript">
+    		var rcalitems = {__ITEMS__};
+    		var rcalcurr_item = 1;
+
+    		
+    </script>
+
+
+ 
+<div id="codes">
+	<!-- BEGIN: message -->
+        <div id="message"  class="message {__MESSAGE_TYPE__}">{__MESSAGE_TEXT__}</div>
+    <!-- END: message -->
+
+    	<div id="instructions">
+			<div class="ins_1"> Para canjear tu(s) código(s) trident sigue estos pasos:</div>
+			<div class="ins_2"> <img src="{__SITE_URL__}images/btn-ins-1.png" class="img-ins">elige tu evento</div>
+			<div class="ins_2"> <img src="{__SITE_URL__}images/btn-ins-2.png" class="img-ins">elige fecha y localidad</div>
+			<div class="ins_2"> <img src="{__SITE_URL__}images/btn-ins-3.png" class="img-ins">Canjea tu código trident<span class="trident_r">®</span></div>
+			<div class="ticket_ins"> 
+				<div class="btn-ticket_1">
+					<img src="{__SITE_URL__}images/btn-ticket.png" > 
+				</div>
+				<div class="btn-ticket_2"><p>tus código(s)</p> 
+					<!-- <p class="ticket_date">Saldo al 14 de Noviembre de 2013.</p>-->	
+				 </div>
+				<div class="btn-ticket">
+					<img id="ticket_" src="{__SITE_URL__}images/btn-ticket_2.png" >
+				 </div>
+			</div> 
+		</div>
+
+		<div id="cards">
+			<div id="codes-arrow-up">
+				<a href="javascript: void(0);" onclick="slideDownRacingCalendar(rcalitems);"><img src="{__SITE_URL__}images/btn_left.png"></a>
+			</div>
+			
+			<div id="cards-mask">
+				<div id="codes-list-containe"> 
+
+				
+				<!-- BEGIN: card -->			
+				
+					<!-- BEGIN: codes -->			
+						<div class="{__CLASS__} code"> 
+							<div class="code_active"><strong>{__CODE__}</strong></div>
+							<div class="user_code">	
+								<strong>{__PIN__}</strong>							
+								<span>{__ACTIVE__} </span>
+							</div>
+							<div class="detail_code">
+								<p>VALOR: <strong> {__VALOR__} </strong></p>
+								<p>SALDO: <strong>{__SALDO__}  </strong></p>
+								<p class="finish_date">{__FINISH__}. <!--<br>Saldo al 14 de Noviembre de 2013.</p>
+								<p class="finish_date">Saldo al {__FINISH__}. Los saldos se actualizan semanalmente.</p>-->
+							</div>	
+						</div>	
+					<!-- END: codes -->	
+					
+				<!-- END: card -->	
+
+				<!-- BEGIN: gift -->
+				
+					<!-- BEGIN: code -->	
+					<div class="{__CLASS__} code"> 
+						<div class="code_active"><strong>{__CODE__}</strong></div>
+						<div class="user_code">
+							<strong>{__PIN__}</strong>
+							<span>{__ACTIVE__} </span>
+						</div>
+						<div class="detail_code">
+							<p>VALOR: <strong> {__VALOR__} </strong></p>
+							<p>SALDO: <strong>{__SALDO__}  </strong></p>
+							<p class="finish_date">{__FINISH__}. <br>Saldo al 14 de Noviembre de 2013.</p>
+							<!--<p class="finish_date">Saldo al {__FINISH__}. Los saldos se actualizan semanalmente.</p>-->
+						</div>
+									
+					</div>	
+					<!-- END: code -->	
+
+
+					<!-- BEGIN: msg -->
+						<div class=" code"> 
+							<div class="{__CLASS__}">Por el momento no hay codigos disponibles
+							</div>									
+						</div>	
+					<!-- END: msg -->			
+				<!-- END: gift -->
+				</div>
+
+		</div>
+
+		<div id="codes-arrow-down">
+			<a href="javascript: void(0);" onclick="slideUpRacingCalendar();"><img src="{__SITE_URL__}images/btn_right.png"></a>
+		</div>
+		
+	</div>
+	
+</div>   
+  
+  
+<!-- END: main -->

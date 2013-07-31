@@ -1,0 +1,311 @@
+/* Slider Module Style */
+footer{	
+	background:none !important;
+	position: relative !important;
+	
+}
+
+#main-login {
+	height: auto !important;
+	width: 100%;
+}
+#administrator{
+
+	width: 950px;
+	height: auto;
+	margin: 100px auto 0 auto;
+	padding: 0 0 30px 0;
+	
+}
+
+#administrator h2{
+	font-size: 18px;
+	color: #FFF;
+	text-align: center;
+}
+#administrator #login{
+	width: 376px;
+	height: 173px;
+	border: none;
+	margin: 20px auto 0px auto;
+}
+
+
+#administrator #login input{
+	background: #FFF;
+	border-radius: 5px;
+	font-family: 'chaletlondonnineteenseventy';
+	font-weight: bolder;
+	padding: 5px 10px;
+	margin: 21px 0;
+}
+#administrator .session{
+	width: 100%;
+	text-align: right;
+	font-size: 14px;
+	margin-top: 50px;
+}
+
+#administrator .new_slide{
+	width: 100%;
+	text-align: center;
+}
+
+#tblItems{
+	width: 800px;
+	height: auto;
+	margin: 20px auto 0 auto;
+	font-size: 14px;
+}
+
+.tblForm{
+	width: auto;
+	height: auto;
+	margin: 25px 0 0 15px;
+}
+
+
+.tblGeneral{
+	margin: 20px auto 0 20px;
+	width: auto;
+	height: auto;
+	color: #333333;
+	font-size: 12px;
+}
+
+.tblGeneral th{
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid #999999;
+	padding: 5px 10px;
+	background: #333333;
+}
+
+.tblGeneral td{
+	padding: 2px 10px;
+	color: #333333;
+}
+
+
+#frmNewItems tr,#frmNewItems td{
+	padding: 5px 10px;
+	color: #333333;
+}
+
+.rowSet{
+	background: #000;
+}
+
+
+.msg{
+	color: #FFF;
+	font-size: 12px;
+	width: 700px;
+	height: auto;
+	margin: 10px 0 0 20px;
+}
+
+
+input{
+	background:#FFF;
+	font-family: 'chaletlondonnineteenseventy';
+	font-weight: bold;
+	padding: 5px 10px !important;
+}
+#picture{
+	background:none;
+	color: #FFF;
+}
+/*************************************
+* Fonts
+*************************************/
+
+h2{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 10px 0 0 0;
+	line-height: 30px;
+	color: #86A816;
+}
+
+h3{
+	color: #003366;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 20px;
+	margin: 10px 0 0 0;
+}
+
+
+#newItem{
+	margin: 20px 0 0 0;
+	width: auto;
+	height: auto;
+}
+
+#newItem label{
+	color: #333333;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+#tblItems th{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#tblItems td{
+	padding: 5px;
+}
+
+.row-grey{
+	background: #000;
+}
+
+.note{
+	font-size: 13px;
+	color: #FFF;
+}
+
+.tblForm label{
+	color: #FFF;
+	font-size: 14px;
+	text-align: left;
+}
+
+/***************************************
+* Links
+***************************************/
+
+.tblGeneral a{
+	color: #FFF;
+	text-decoration: underline;
+}
+
+a.star-button{
+	display: block;
+	width: 33px;
+	height: 32px;
+	background: url(../images/star-icon.png) -37px 0 no-repeat;
+	margin: 0 auto;
+}
+
+
+
+a.star-button:hover, a.star-button-active{
+	display: block;
+	width: 33px;
+	height: 32px;
+	background: url(../images/star-icon.png) 0 0 no-repeat;
+	margin: 0 auto;
+}
+
+#administrator .session a{
+	color: #CCCCCC;
+}
+
+#administrator .session a:hover{
+	text-decoration: underline;
+}
+
+
+#administrator a.button_adm{
+	color: #003366;
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: bold;
+	display: block;
+	width: 100px;
+	height: auto;
+	padding: 3px 10px;
+	background: #F8F8F8;
+	border: 1px solid #003366;
+	margin: 20px auto 0 auto;
+}
+
+
+#administrator a.button_adm:hover{
+	background: #666666;
+	color: #FFFFFF;
+}
+
+/*************************************
+* Forms
+*************************************/
+
+.frm-input1{
+	border: 1px solid #CCCCCC;
+	width: 600px;
+	height: 20px;
+	font-size: 14px;
+	font-family: "Century Gothic",Arial, Helvetica, sans-serif;
+	margin: 5px 0 0 0;
+}
+
+.frm-input2{
+	border: 1px solid #CCCCCC;
+	width: 300px;
+	height: 20px;
+	font-size: 14px;
+	font-family: "Century Gothic",Arial, Helvetica, sans-serif;
+	margin: 5px 0 0 0;
+}
+
+.frm-input3{
+	border: 1px solid #CCCCCC;
+	width: 30px;
+	height: 20px;
+	text-align: center;
+	font-size: 14px;
+	font-family: "Century Gothic",Arial, Helvetica, sans-serif;
+	margin: 5px 0 0 0;
+}
+
+.frm-input4{
+	border: 1px solid #CCCCCC;
+	width: 150px;
+	height: 20px;
+	font-size: 14px;
+	font-family: "Century Gothic",Arial, Helvetica, sans-serif;
+	margin: 5px 0 0 0;
+}
+
+.frm-list1{
+	border: 1px solid #CCCCCC;
+	width: auto;
+	height: 22px;
+	font-size: 14px;
+	font-family: "Century Gothic",Arial, Helvetica, sans-serif;
+	margin: 5px 0 0 0;
+}
+
+.frm-area1{
+	border: 1px solid #CCCCCC;
+	width: 600px;
+	height: 400px;
+	font-family: "Century Gothic",Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.frm-area2{
+	border: 1px solid #CCCCCC;
+	width: 600px;
+	height: 100px;
+	font-family: "Century Gothic",Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+#administrator #login .input1{
+	border: 1px solid #666666;
+	width: 130px;
+	height: 20px;
+	margin: 5px 0 0 5px;
+}
+
+
+#administrator #login label{
+	font-size: 15px;
+	line-height: 28px;
+}
